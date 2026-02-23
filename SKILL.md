@@ -20,6 +20,8 @@ See `config/README.md` for token setup (OAuth, permissions: `metrika:read`, `met
 
 ## Quick Start
 
+**IMPORTANT:** Always run scripts with `bash` prefix and **absolute paths** from the skill directory. Scripts use bash-specific features and will not work if sourced from zsh. Do NOT `source scripts/common.sh` directly — use the wrapper scripts below.
+
 ```bash
 # 1. Setup token
 bash scripts/get_token.sh --client-id YOUR_CLIENT_ID
